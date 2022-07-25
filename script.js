@@ -20,7 +20,7 @@ for (var i = 9; i <= 17; i++) {
         <textarea>${data}</textarea>
     </div>
     <div>
-        <button data-hour="${i}">Save</button>
+        <button class="btn btn-info" data-hour="${i}">Save</button>
     </div>
     </div>
     `;
