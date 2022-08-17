@@ -3,10 +3,12 @@ console.log("hello world");
 var dayDisplayEl = $("#day-display");
 //display current time
 function displayDay() {
-  var today = moment().format(`MM DD, YYYY`);
+  var today = moment().format(`dddd MMM DD, YYYY`);
   dayDisplayEl.text(today);
 }
 //declare the current day HTML element
+
+//declare current hour
 
 //declare time entries container html element
 
@@ -14,6 +16,8 @@ function displayDay() {
 for (var i = 9; i <= 17; i++) {
   //attempt to get the saved data for the hour of the loop
   var data = "asf";
+
+  //compare i to current hour to determine if this hour is in the past, present, or future
 
   var template = `
     <div class = "row">
