@@ -1,7 +1,11 @@
 console.log("hello world");
 
+var dayDisplayEl = $("#day-display");
 //display current time
-
+function displayDay() {
+  var today = moment().format(`MM DD, YYYY`);
+  dayDisplayEl.text(today);
+}
 //declare the current day HTML element
 
 //declare time entries container html element
@@ -28,3 +32,5 @@ for (var i = 9; i <= 17; i++) {
 }
 
 // Save an hour to local storage
+
+displayDay();
